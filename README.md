@@ -39,3 +39,7 @@ It's really simple!
 ## Got a question?
 
 Send me a message! Ninja#4321 on discord.
+
+## License
+
+This is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

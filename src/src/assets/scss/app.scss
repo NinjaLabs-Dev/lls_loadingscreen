@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+#app, .home, .content-container {
+    height: 100%;
+    width: 100%;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    background: #140a12;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+}
+
+.bg-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #21091ce0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.branding {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.branding img {
+    width: 8.5em;
+    height: 8.5em;
+    margin-right: 1.5em;
+}
+
+.branding .text h1, .branding .text h2 {
+    margin: 0;
+    letter-spacing: 0.03em;
+}
+
+.branding .text h2 {
+    opacity: .40;
+}
+
+.image-container {
+    width: 50%;
+    height: 50%;
+    position: relative;
+}    
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    box-shadow: -1px 4px 11px 0px #000000a6;
+}
+
+.author {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1.2em;
+}
+
+.author span {
+    position: relative;
+    transform: rotateY(45deg);
+}
+
+.music-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.music-bar {
+    width: 35%;
+    padding: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #140a12;
+    border-radius: .5em .5em 0 0;
+}
+
+.music-bar svg {
+    height: 1.8em;
+    width: 1.8em;
+}
+
+.volume-popup {
+    -webkit-appearance: slider-vertical;
+}
